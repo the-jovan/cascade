@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  position: fixed;
+  width: calc(100% - 100px);
+  top: 30px;
+  padding: 0 50px;
+
+  &__logo {
+    flex: 1;
+  }
+
+  &__links {
+    flex: 1;
+  }
+}
