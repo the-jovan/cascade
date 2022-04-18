@@ -1,0 +1,47 @@
+@import "../../styles/variables.scss";
+
+.wrapper {
+  position: relative;
+  margin-right: 20px;
+
+  &:hover {
+    .icon {
+      transform: scale(.85);
+    }
+  }
+}
+
+.input {
+  padding: 1rem 4rem 1rem 2rem;
+  background-color: transparent;
+  border-radius: 50px;
+  color: $color--dark;
+  font-family: "Lato", sans-serif;
+  border: 1px solid $color--dark;
+  font-size: 20px;
+
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 58px;
+  width: 58px;
+  background: $color--black;
+  border-radius: 50%;
+  transition: .3s all;
+  transition-delay: .1s;
+  cursor: pointer;
+
+  svg {
+    transform: scale(.5);
+    filter: invert(1);
+  }
+}

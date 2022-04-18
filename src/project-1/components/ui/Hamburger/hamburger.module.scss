@@ -1,0 +1,60 @@
+@import '../../styles/variables.scss';
+
+.wrapper {
+  width: 58px;
+  height: 58px;
+  background: transparent;
+  border: 1px solid $color--dark;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+
+  &:hover {
+    .right {
+      padding-left: 0.25rem;
+      margin-left: -0.75rem;
+    }
+  }
+}
+
+.right {
+  // position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: $color--white;
+  transform: translateX(50%);
+  transition: .2s all;
+  border-left: 1px solid $color--dark;
+
+  &__burger {
+    position: relative;
+    width: 12px;
+    height: 4px;
+    margin-left: 6px;
+    border-top: 1px solid $color--dark;
+    border-bottom: 1px solid $color--dark;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -6px;
+      left: 0;
+      height: 1px;
+      width: 12px;
+      background: $color--dark;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      height: 1px;
+      width: 12px;
+      background: $color--dark;
+    }
+  }
+}

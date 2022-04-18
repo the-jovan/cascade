@@ -1,0 +1,19 @@
+@import "../../styles/animations.scss";
+@import "../../styles/variables.scss";
+
+.button {
+  width: fit-content;
+  padding: 1rem 2rem;
+  background-color: $color--white;
+  border-radius: 50px;
+  border: 1px solid $color--dark;
+  color: $color--dark;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    animation: pulse 1s infinite;
+  }
+}
